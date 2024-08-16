@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  doctor: one
+  patient: one
+  sync_status: MyString
+  details: MyText
+
+two:
+  doctor: two
+  patient: two
+  sync_status: MyString
+  details: MyText

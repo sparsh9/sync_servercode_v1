@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  doctor: one
+  name: MyString
+  medical_history: MyText
+  sync_status: MyString
+  timestamp: 2024-08-15 22:43:56
+
+two:
+  doctor: two
+  name: MyString
+  medical_history: MyText
+  sync_status: MyString
+  timestamp: 2024-08-15 22:43:56

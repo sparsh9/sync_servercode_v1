@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get 'sync/sync_data'
+  get 'patients/index'
+  get 'patients/create'
+  get 'patients/update'
+  get 'patients/destroy'
+  get 'doctors/index'
+  get 'doctors/show'
+  resources :doctors, only: [:index, :show] do
+    resources :patients, only: [:index, :create, :update, :destroy]
+    post 'sync', to: 'sync#sync_data'
+  end
 end
